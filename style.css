@@ -1,0 +1,271 @@
+body{
+ background-color: #ececec;
+ height: 100%;
+}
+
+.first
+{
+  border: 2px solid #156ee2;
+  width: 96%;
+  margin-left: 2%;
+ background-color: #071425;
+margin-bottom: 10px;
+color: #156ee2;
+}
+
+.first p{
+
+  text-align: center;
+  font-size: 17px;
+  margin-top: 0;
+  color: white;
+}
+.first h1{
+
+  text-align: center;
+  font-size: 35px;
+  margin-top: 10px;
+  color: #9e0e62;
+}
+.nav ul
+{
+margin: 0;
+padding: 0;
+list-style: none;
+height: 36px;
+line-height: 36px;
+width: 96.1%;
+margin-left: 2%;
+background-color: #071425;
+font-family: Helvetica;
+font-size: 15px;
+border: 1px solid blue;
+text-align: center;
+}
+
+
+.nav li 
+{
+    display: inline-block;
+    border-right: 1px solid #156ee2;
+    text-align: center;
+    float: left;
+    width: 275.3px;
+}
+
+ .nav a {
+     display: block;
+     padding: 0 38px;
+     color:white;
+     text-decoration: none;
+ }
+
+a:hover, .active a{ 
+background-color: #156ee2;
+
+ }
+
+ .sub-menue{
+   display: none;
+
+ }
+
+ .nav ul li:hover .sub-menue{
+   display: block;
+   position: absolute;
+   margin-left: 0;
+
+ }
+
+ .nav ul li:hover .sub-menue ul{
+   display: block;
+   margin: 0;
+   width: 240px;
+ }
+ .nav ul li:hover .sub-menue ul li{
+   width: 50px;
+   padding: 0;
+   border-bottom: 1px solid  #156ee2;
+   background: #071425;
+   text-align: left;
+   width: 100%;
+   border-radius: 0;
+ }
+
+
+.quote
+{
+    color:  #797979;
+    border: 2px solid #156ee2;
+    line-height: 50px;
+    font-size: 20px;
+    width: 96%;
+    margin-left: 2%;
+    background-color: #071425;
+    text-align: center;
+}
+.heading h1
+  {
+    margin-top: 20px;
+    margin-left: 2%;
+  }
+  .link{
+    background-color: #156ee2;
+  }
+
+.link h2
+{
+margin-top: 0;
+color: black;
+list-style: none;
+padding-left: 1%;
+line-height: 36px;
+width: 45%;
+margin-left: 2%;
+float: left;
+}
+
+.link a {
+  color: #156ee2;
+  list-style: none;
+  text-decoration: none;
+}
+
+.experience h1
+{
+  padding-left: 2%;
+  position: relative;
+  margin-top: 200px;
+  margin-bottom: 0px;
+
+}
+
+.position h1{
+
+  font-family: Helvetica;
+  margin-left: 2%;
+  border-bottom: 2px solid #156ee2;
+  line-height: 10px;
+  color: #9e0e62;
+  margin-top: 0;
+}
+
+.position h2{
+
+  font-family: Helvetica;
+  border-bottom: 1px solid #696969;
+  margin-left: 2%;
+  line-height: 10px;
+  color: #797979;
+}
+.position{
+  border: 2px solid #156ee2;
+  margin: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 2%;
+  background-color: #071425;
+  width: 96%;
+  
+}
+.award li
+{
+font-size: 20px;
+line-height: 35px;
+margin-left: 4%;
+color: white;
+}
+.award p
+{
+  margin-left: 8%;
+  width: 90%;
+  border-bottom: 1px solid #696969;
+  color: #797979;
+  font-size: 17px;
+}
+.award ul{
+  border: 2px solid #156ee2;
+  margin-left: 2%;
+  width: 93%;
+  background-color: #071425;
+}
+.award h1{
+  margin-left: 2%;
+}
+.award a {
+  margin-left: 1%;
+  list-style: none;
+  text-decoration: none;
+}
+.patent h2{
+font-size: 28px;
+margin-left: 2%;
+color: #797979;
+}
+.patent p{
+  margin-left: 2%;
+  margin: 0;
+  font-size: 17px;
+  margin-right: 0;
+}
+.patent h3{
+
+  margin: 0;
+  color: white;
+  font-size: 17px;
+}
+.resume h1{
+  margin-left: 2%;
+}
+.resume iframe{
+  margin-left: 2%;
+  padding: 0;
+  border: 2px solid #156ee2;
+  margin-bottom: 30px;
+}
+.end{
+  background-color: #071425;
+  color: #797979;
+  text-align: center;
+  margin-left: 2%;
+  position: relative;
+  line-height: 36px;
+  border-left: 3px solid #156ee2;
+  border-right: 3px solid #156ee2;
+  border-bottom: 3px solid #156ee2;
+}
+.end p{
+  text-align: center;
+  margin: 0;
+}
+.end ul{
+margin: 0;
+padding: 0;
+text-align: center;
+}
+.end ul li{
+  display: inline-block;
+  margin: 0;
+}
+.end ul li a{
+  margin: 0;
+  padding: 3px;
+  margin-top: 3px;
+  margin-bottom: 0;
+  margin-right: 2px;
+  color: #156ee2;
+  text-align: center;
+  display: block;
+  border-radius: 50%;
+  font-size: 20px;
+  height: 22px;
+  width: 30px;
+  background: black;
+}
+.end h3{
+  color: black;
+  background-color: #156ee2;
+}
+.end a:hover{
+  background-color: white;
+}
