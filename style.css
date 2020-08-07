@@ -293,6 +293,13 @@ margin-left: -20%;
 }
 }
 
+@media (max-width: 370px){
+
+ nav .logo{
+    font-size: 25px;
+  }
+}
+
 .link a {
   color: #156ee2;
   margin-left: 10px;
@@ -686,7 +693,7 @@ color: #c92e89;
     .end h3{
       padding-top: 10px;
       padding-bottom: 10px;
-      color: #156ee2;
+      color: #f7f7f7;
     }
     .end{
 
