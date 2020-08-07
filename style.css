@@ -509,14 +509,17 @@ background: yellow;
 
     margin-left: 10px;
     margin-right: 10px;
-    font-size: 13px;
-    text-align: left;
+    font-size: 12px;
+    text-align: justify;
     border: none;
     background-color: #071425;
     opacity: 0.9;
     color:  white;
     padding: 5px;
     font-style: italic;
+}
+.Award a{
+  font-size: 10px;
 }
 }
 
@@ -588,13 +591,13 @@ color: #c92e89;
           margin-right: 10px;
           margin-top: 20px;
           border-bottom: 1px solid #535353;
-          font-size: 15px;
+          font-size: 14px;
         } 
         .patent p{
           margin-left: 10px;
           margin-right: 10px;
           font-weight: 500;
-          font-size: 15px;
+          font-size: 14px;
         }
         .patent a{
 
