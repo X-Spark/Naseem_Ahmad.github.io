@@ -22,7 +22,7 @@
 <body>
 
 
-  <nav>
+  <nav id="122">
     <div class="menu-icon">
       <span class="fas fa-bars"></span></div>
 
@@ -32,12 +32,12 @@
 
 
     <div class="nav-items">
-      <li style="font-size: 30px;"><a href="#"><b>Home</b></a></li>
-      <li><a href="#award"><b>🥇Awards & Achievements</b></a></li>
-      <li><a href="#patent"><b>Patent and Research</b></a></li>
-      <li><a href="#experience"><b>My Experiences</b></a></li>
-      <li><a href="#"><b>My Projects </b></a>
-
+      <li style="font-size: 30px;"><a href="#"> Home </a></li>
+      <li><a href="#award">🥇Awards & Achievements</a></li>
+      <li><a href="#patent" target="_toggle">Patent and Research</a></li>
+      <li><a href="#experience">My Experiences</a></li>
+      <li> <a href="#">My Projects </a>
+        
 
         <div class="sub-menue">
 
@@ -258,7 +258,16 @@
       searchBtn.classList.add("hide");
       cancelBtn.classList.add("show");
     }
+
+    $(document) .ready(function(){
+      $("#122").click(function() {
+       $("#122") .toggle();
+      });
+    });
+
   </script>
+
+
 
 </body>
 
