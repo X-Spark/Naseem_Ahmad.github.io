@@ -687,8 +687,9 @@ color: #c92e89;
 }
 
 .gallery{
-  background-color: #f4f4f4;
+  background-color:  #100e17;
   border-bottom: 1px dotted #ddd;
+  border-top: 1px dotted #ddd;
   width: 100%;
   min-height: 50px;
   margin: 0px;
@@ -700,8 +701,8 @@ color: #c92e89;
 }
 .gallery .box{
   position: relative;
-  width: 200px;
-  height: 145px;
+  width: 208px;
+  height: 170px;
   background: #1e232b;
   margin: 10px 10px 10px 5px;
 }
@@ -713,8 +714,10 @@ overflow: hidden;
 
 .gallery .box .imgbox img{
 
-  max-width: 100%;
-  transition: transform 2s;
+  width: 208px;
+  height: 170px;
+  transition: transform 1s;
+  position: relative;
   }
 
   .gallery .box:hover .imgbox img{
@@ -728,16 +731,15 @@ overflow: hidden;
     left: 0px;
     bottom: -7px;
     right: 0px;
-    background-color: black;
-    opacity: 1.2;
+    background-color: #100e17;
+    opacity: 0.9;
     transform: scaleY(0);
     transition: transform .5s;
     box-sizing: border-box;
-    display: ruby-text-container;
   }
 
   .gallery .box:hover .details{
-    transform: scaleY(1);
+    transform: scaleY(1 );
   }
 
   .gallery .box .details .content{
@@ -754,20 +756,22 @@ overflow: hidden;
   .gallery .box .details .content h2{
     margin: 0;
     padding: 0;
-    margin-bottom: 3px;
+    padding-top: 10px;
+    margin-bottom: 5px;
     text-align: center;
-    font-size: 10px;
-    color:  #f7f7f7;
+    font-size: 15px;
+    color:   #c92e89;
     text-align: center;
   }
 
   .gallery .box .details .content p{
-    margin: 0;
-    padding: 0;
-    font-size: 9px;
-    color: white;
-    text-align: justify;
+    margin: 8px;
+    padding: 10px;
+    font-size: 11px;
+    color:  cyan;
+    text-align: center;
     box-sizing: border-box;
+    border: 1px dotted #ddd;
      }
 
   .gallhead h1{
@@ -779,7 +783,9 @@ overflow: hidden;
     background-color: #f4f4f4;
     border-top: 1px dotted #ddd;
   }
-
+  .gallhead h1{
+    border: none;
+  }
 
   @media  (max-width: 680px){
 
@@ -789,29 +795,43 @@ overflow: hidden;
     }
 
     .gallery{
-      padding-top: 10px;
-      background-color: #f4f4f4;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      background-color: #100e17;
       width: 100%;
     }
 
     .gallery .box{
-      width: 160px;
-      height: 116.75px;
+      width: 165px;
+      height: 120px;
       justify-content: center;
       margin: 5px;
   }
+  .gallery .box .imgbox img{
+
+    width: 165px;
+    height: 120px;
+    transition: transform 1s;
+    position: relative;
+    }
+  
 
   .gallery .box .details .content p{
 
     box-sizing: content-box;
     font-size: 7px;
+    color:  cyan;
 }
 
 .gallery .box .details .content h2{
 
   box-sizing: content-box;
-  font-size: 8px;
+  font-size: 10px;
   margin: 0;
-  color:   cyan;
+  color:  #c92e89;
+}
+
+.gallery .box:hover .details{
+  transform: scaleY(1);
 }
 }
