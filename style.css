@@ -180,6 +180,10 @@ nav ul ul li a{
 
 /*This is new code pasted here from earlier slide*/ 
 
+.blank{
+  height: 20px;
+}
+
 .link{
 
   background-color: #f4f4f4;
@@ -317,6 +321,7 @@ h1{
     min-width: auto;
     margin: 0;
     padding: 0;
+    background-color: #fff;
   }
   .experience, h1{
     margin-left: 10px;
@@ -339,11 +344,6 @@ h1{
     font-size: 14px;
     color: #535353;
     border-bottom: 1px dotted #535353;
- }
-
- .experience tbody td:first-child{
-
-  padding-bottom: 30px;
  }
  }
 
@@ -374,6 +374,8 @@ h1{
  padding-bottom: 5px;
  font-weight: bold;
  font-size: 18px;
+ margin-right: 60px;
+ text-decoration: underline;
 }
 .Award a{
   font-size: 15px;
@@ -448,19 +450,23 @@ background: yellow;
   }
 .patent h2{
 margin-left: 60px;
+margin-right: 60px;
 padding-top: 20px;
 padding-bottom: 5px;
 color: #c92e89;
+border-bottom: 1px dotted #535353;
 }
 .patent h3{
   margin-left: 60px;
   padding-top: 5px;
   font-size: 16px;
+  text-decoration: underline;
   }
   .patent h4{
     margin-left: 60px;
     margin-top: 20px;
     font-size: 20px;
+    text-decoration: underline;
     }
     .patent p{
       margin-left: 60px;
@@ -555,15 +561,13 @@ color: #c92e89;
       .end ul li{
         display: inline-block;
         margin: 0;
+        padding-left: 5px;
       }
       .end ul li a{
         margin: 0;
         margin-top: 20px;
-        padding: 0
-        margin-top: 2px;
-        margin-bottom: 2px;
-        margin-right: 2px;
-        color: white;
+        padding: 0;
+        color: silver;
         text-align: center;
         display: block;
         border-radius: 50%;
@@ -794,6 +798,7 @@ overflow: hidden;
     .gallhead{
       margin-top:  10px;
       padding-top: 10px;
+      text-align: center;
     }
 
     .gallery{
