@@ -192,6 +192,7 @@ nav ul ul li a{
   color: #156ee2;
   margin-left: 10px;
   text-align: center;
+  text-decoration: none;
 }
 .link h1{
   margin: 0;
@@ -208,7 +209,8 @@ nav ul ul li a{
 font-size: 20px;
 margin-left: 60px;
 padding: 5px 0;
-margin-bottom: 20px;
+margin-bottom: 5px;
+margin-top: 10px;
 }
 .link h3{
   font-size: 20px;
