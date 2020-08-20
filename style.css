@@ -7,24 +7,13 @@
   font-family: 'Poppins', sans-serif;
 }
 body{
+  background:  #f4f4f4;
   background-image: url(200.png);
 }
-.body-content{
-  margin: 0px 50px;
-}
-
-@media (max-width: 680px){
-  .body-content{
-    margin: 0px;
-  }
-
-}
-
 nav{
   background: #100e17; 
   box-sizing: border-box;
 }
-
 nav:after{
   content: '';
   clear: both;
@@ -100,18 +89,6 @@ nav ul ul li a{
 }
 .fas{
   padding-left: 10px;
-}
-
-
-@media  (max-width: 1050px) {
-
-  nav ul{
-    margin: 0px 40px;
-    text-align: left;
-  }
-  nav .logo{
-  margin: 0px 45px;
-}
 }
 
 
@@ -202,21 +179,20 @@ nav ul ul li a{
   }
 }
 
-/*This is new code pasted here from earlier slide*/ 
-@media (max-width: 680px){
-  .blank{
-    height: 20px;
-  }
 
+/*This is new code pasted here from earlier slide*/ 
+
+.blank{
+  height: 20px;
 }
 
 .link{
 
   background-color: #f4f4f4;
-  border-bottom: 5px solid #fff;
-  border-top: 5px solid #fff;
-  margin-top: 0px;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
   box-shadow: 0px 5px 15px #071425;
+  margin-top: 10px;
 }
 
 
@@ -272,8 +248,6 @@ margin-top: 10px;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: none;
-  margin-bottom: 20px;
 }
 .link a {
   color: #156ee2;
@@ -314,25 +288,24 @@ font-size: 14px;
 
 .experience{
   border-collapse: collapse;
-  margin: 0px;
+  margin: 20px;
   margin-left: 60px;
-  margin-top: 0px;
+  margin-top: 20px;
   font-size: 0.9em;
   min-width: 400px;
+  background-color: #f4f4f4;
 
 }
 .experiencehead{
-  margin: 0;
+  box-shadow: 0px 5px 15px #071425;
   padding-bottom: 10px;
   background-color: #f4f4f4;
-  box-shadow: 0px 5px 15px #071425;
-  border-top: 5px solid #fff;
 }
 
 h1{
   padding-top: 10px;
   margin: 10px 50px;
-  margin-top: 0px;
+  margin-top: 30px;
   margin-bottom: 0;
   padding-bottom: 10px;
   font-size: 28px;
@@ -341,7 +314,7 @@ h1{
 .experience thead tr{
   text-align: center;
   font-weight: 600;
-  margin-top: 10;
+  margin-top: 0;
   font-size: 20px;
   color: #c92e89;
   border-bottom: 1px dotted #535353;
@@ -362,7 +335,6 @@ h1{
     background-color: #f4f4f4;
     margin-bottom: 0px;
     padding-bottom: 20px;
-    border: none;
   }
   .experience{
     min-width: auto;
@@ -372,7 +344,7 @@ h1{
   }
   .experience, h1{
     margin-left: 10px;
-    margin-top: 0px;
+    margin-top: 20px;
     margin-right: 10px;
     margin-bottom: 0;
     font-size: 20px;
@@ -398,7 +370,6 @@ h1{
 
  .Award{
   margin: 0;
-  margin-top: 30px;
   padding: 0;
   box-shadow: 0px 5px 15px #071425;
   background-color: #f4f4f4;
@@ -446,7 +417,7 @@ border-radius: 5px;
 
  #awardspace{
 
-  margin-bottom: 0px;
+  margin-bottom: 30px;
   padding-bottom: 30px;
  }
  .Award h4{
@@ -460,7 +431,6 @@ border-radius: 5px;
   .Award{
 
     margin: 0;
-    margin-top: 20px;
     padding: 0;
     box-shadow: 0px 5px 15px #071425;
   }
@@ -509,12 +479,13 @@ padding-bottom: 5px;
 
 .patent{
   background-color: #f4f4f4;
-  border-top: 5px solid  #fff;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px dotted #ddd;
   box-shadow: 0px 5px 15px #071425;
 }
 
 .patent h1{
-  margin-top: 0px;
+  margin-top: 20px;
   margin-left: 50px;
   border-bottom: 1px solid #535353;
   }
@@ -562,10 +533,6 @@ border-bottom: 1px dotted #535353;
           margin: 0;
           margin-top: 20px;
           margin-left: 0;
-          border: none;
-          box-shadow: 0px 5px 15px  #100e17;
-          background-color: #f4f4f4;
-          margin-bottom: 20px;
         }
         .patent h1{
           margin-top: 10px;
@@ -713,13 +680,11 @@ border-bottom: 1px dotted #535353;
 /* my resume */
 
 .resume{
-  background-color: #f4f4f4;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  height: 200px;
-  border-top: 5px solid #fff;
-  border-bottom: 5px solid #fff;
+  margin-top: 10px;
+  margin-bottom: 20px;
   box-shadow: 0px 5px 15px #071425;
+  height: 200px;
+  background: #f4f4f4;
 }
 
 .resume h1{
@@ -759,8 +724,6 @@ border-bottom: 1px dotted #535353;
   .resume{
     height: 140px;
     background-color: #f4f4f4;
-    border: none;
-    margin-bottom: 20px;
   }
 
   .resume h2{
@@ -789,14 +752,14 @@ border-bottom: 1px dotted #535353;
 }
 
 .gallery{
-  border: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
   width: 100%;
   min-height: 50px;
   margin: 0px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-left: 5px;
   justify-content: center;
   background: #100e17;
   box-shadow: 0px 5px 15px #071425;
@@ -804,10 +767,11 @@ border-bottom: 1px dotted #535353;
 }
 .gallery .box{
   position: relative;
-  width: 196px;
+  width: 208px;
   height: 170px;
   background: #100e17;
   margin: 10px 10px 10px 0px;
+  box-shadow: 0px 5px 15px #071425;
 }
 
 .gallery .box .imgbox{
@@ -817,7 +781,7 @@ overflow: hidden;
 
 .gallery .box .imgbox img{
 
-  width: 196px;
+  width: 208px;
   height: 170px;
   transition: transform 1s;
   position: relative;
@@ -887,7 +851,7 @@ overflow: hidden;
   }
   .gallhead{
     background-color: #f4f4f4;
-    border-top: 5px solid #fff;
+    border-top: 1px solid #ddd;
     box-shadow: 0px 5px 15px #071425;
   }
 
@@ -900,7 +864,6 @@ overflow: hidden;
     }
     .gallhead{
       margin-top: 0;
-      border: none;
     }
 
     .gallery{
