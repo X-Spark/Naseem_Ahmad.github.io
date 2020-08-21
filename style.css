@@ -303,7 +303,7 @@ font-size: 14px;
 }
 
 h1{
-  padding-top: 10px;
+  padding-top: 20px;
   margin: 10px 50px;
   margin-top: 30px;
   margin-bottom: 0;
@@ -516,7 +516,9 @@ border-bottom: 1px dotted #535353;
       }
       .patent a:hover {
         background-color: yellow;
-        color: #c12725;
+        color:  red;
+        padding: 0px 5px;
+        border-radius: 5px;
       }
 
       .patent a{
@@ -618,7 +620,7 @@ border-bottom: 1px dotted #535353;
         text-align: center;
         display: block;
         border-radius: 50%;
-        font-size: 20px;
+        font-size: 18px;
         height: 35px;
         width: 35px;
         background: black;
@@ -706,8 +708,8 @@ border-bottom: 1px dotted #535353;
   text-decoration: none;
   background-color: #f7f7f7;
   color:  #156ee2;
-  box-shadow:   0 0 5px red,
-                0 0 10px  red; 
+  box-shadow:   0 0 5px #c92e89,
+                0 0 10px #c92e89; 
   border-radius: 5px;
   box-sizing: border-box;
 }
