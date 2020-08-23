@@ -27,13 +27,13 @@ Naseem Ahmad</div>
       </label>
       <input type="checkbox" id="btn">
       <ul>
-<li class="active"><a href="#">Home</a></li>
+<li><a href="#">Home</a></li>
 <li>
-          <label for="btn-1" class="show">My Projects <i class="fas fa-caret-down"></i></label>
+          <label for="btn-1" class="show">My Projects <i class="fas fa-caret-down" ></i></label>
           <a href="#">My Projects +</a>
           <input type="checkbox" id="btn-1">
           <ul>
-<li><a href="x-spark.html">X-Spark</a></li>
+<li class="active"><a href="x-spark.html">X-Spark</a></li>
 <li><a href="https://medium.com/@HR03/smart-notice-board-using-x-spark-mat-1c508a5e84f3" target="_blank">Smart Notice Board</a></li>
 <li><a href="jaago.html" target="_blank">JAAGO</a></li>
 <li><a href="Smart.html" target="_blank">Home Security system</a></li>
@@ -50,8 +50,10 @@ Naseem Ahmad</div>
 
 <div class="xspark"> 
    <h1> X-Spark </h1>
-   <h2><text style="color: #156ee2">Technology Used:</text> Embedded system, Mircocontroller, inverter circuit, Battery Management</h2>
+   <h4 id="tech"><text style="color: #156ee2;">Technology Used:</text> <text style="font-weight: 600;">
+   Embedded system || Microcontroller || inverter circuit || Battery Management System </text></h4>
   
+
    <div class="abstract">
    <h3>Abstract</h3>
    <p>World population is increasing day by day
@@ -80,8 +82,10 @@ Naseem Ahmad</div>
       to convert mechanical energy into electrical energy)</p>
    </div>
 
+   <span id="dots">...</span><span id="more">
+   <div class="more">
 <div class="inroduction">
-        <h3>INTRODUCTION</h3>
+        <h3>Introduction</h3>
       <p>This paper describes the generation of electricity using X-
          Spark (tiles or mats). When a human walks or a vehicle runs
          on the surface of a road, it exerts some pressure (energy) on
@@ -202,6 +206,9 @@ Naseem Ahmad</div>
                human/ vehicle pressure/weight. It is the new way of
                generating electricity for the whole world.</p> 
             </div>
+         </div>
+      </span>
+      <button onclick="myFunction()" id="myBtn">Read more...</button>
 
              <div class="motto">
                <h4>“X-Spark’s motto is to develop a sustainable, scalable,
@@ -249,6 +256,27 @@ Naseem Ahmad</div>
          });
        </script>
    
-     </body>
+
+   <!--This Js is for read more option-->
+<script>
+   function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+    
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+      }
+    }
+   </script>
+   <!--Js For Read more End -->
+
+   </body>
    </html>
    
