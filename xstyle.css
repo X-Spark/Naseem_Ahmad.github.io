@@ -191,17 +191,13 @@ nav ul ul li a{
     margin: 0px 50px;
     padding: 0;
     text-align: justify;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 15px;
    }
    .xspark h1{
     margin: 0px 50px;
     color: #c92e89;
-    text-align: left;
    }
-   #model h3{
-     padding-bottom: 20px;
-   }
+
    .xspark h4{
     margin: 20px 100px;
     padding: 20px;
@@ -212,40 +208,17 @@ nav ul ul li a{
  .xspark h2{
   margin: 0px 50px;
   font-size: 20px;
-  border-bottom: 1px solid #071425;
  }
   .xspark h3{
     padding-top: 20px;
     margin: 0px 50px;
-    font-size: 23px;
-    font-weight: 600;
-    text-decoration: underline;
+    font-size: 25px;
   }
 
   .xspark h3 p{
 
     padding-bottom: 50px;
   }
-  #more {
-    display: none;
-  }
-  #myBtn{
-    background:  #c92e89;
-    color: #fff;
-    padding: 5px 15px;
-    margin-left: 0px;
-    border: 2px solid  cyan;
-  }
-  #dots{
-    font-size: 20px;
-    padding-left: 50px;
-    }
-    #tech{
-      text-align: left;
-      margin: 0px 50px;
-      padding: 5px;
-      border: none;
-    }
 
   @media  (max-width: 680px) {
     .xspark{
@@ -296,7 +269,6 @@ nav ul ul li a{
     margin-right: 20px;
     margin-top: 0px;
     font-size: 20px;
-    text-decoration: none;
     border-bottom: 1px solid #100e17;
   }
   .xspark p{
@@ -310,14 +282,6 @@ nav ul ul li a{
     margin-right: 20px;
     padding: 5px;
     font-size: 15px;
-  }
-  #tech{
-    margin: 0;
-    text-align: center;
-    margin: 10px 20px;
-    padding: 5px;
-    border: 1px solid #100e17;
-    font-size: 13px;
   }
   .motto{
     margin-top: 10;
@@ -333,9 +297,6 @@ nav ul ul li a{
   }
   #dots{
   font-size: 20px;
-  }
-  #future{
-    margin-top: 20px;
   }
   }
    /*footer start */
