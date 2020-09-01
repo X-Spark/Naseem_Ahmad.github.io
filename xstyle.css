@@ -7,12 +7,14 @@
   font-family: 'Poppins', sans-serif;
 }
 body{
-  background:  #f4f4f4;
+  background:  #fff;
   background-image: url(200.png);
 }
 nav{
   background: #100e17; 
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 nav:after{
   content: '';
@@ -41,14 +43,14 @@ nav ul li{
   margin: 0 5px;
 }
 nav ul li a{
-  color: white;
+  color: cyan;
   line-height: 70px;
   text-decoration: none;
   font-size: 18px;
-  padding: 8px 15px;      
+  padding: 8px 15px;
 }
 nav ul li a:hover, .active a, #btn-1{
-  color: cyan;
+  color: #156ee2;
   border-radius: 5px;
   box-shadow:  0 0 5px #c92e89,
                0 0 10px #c92e89;          
@@ -68,6 +70,7 @@ nav ul li:hover > ul{
   top: 70px;
   opacity: 1;
   visibility: visible;
+  z-index: 99;
 }
 nav ul ul li{
   position: relative;
@@ -80,7 +83,7 @@ nav ul ul li{
 }
 nav ul ul li a{
   line-height: 50px;
-  padding: 5px 10px
+  padding: 5px 10px;
   padding-left: 20px;
 }
 
@@ -180,7 +183,10 @@ nav ul ul li a{
 }
 
  /* body content  start*/
+  
+   .start{
 
+   }
 
    .xspark{
      margin: 50px 50px;
@@ -207,14 +213,25 @@ nav ul ul li a{
      padding-bottom: 20px;
    }
    .xspark h4{
-    margin: 20px 100px;
-    padding: 20px;
+    margin: 20px 200px;
+    padding: 20px 50px;
     text-align: center;
+    border: 1px solid #fff;
+    border-radius: 10px;
     color: #c92e89;
-    border: 1px solid #100e17;
+     box-shadow:  0 0 5px #191970,
+     0 0 10px  #191970;  
+    font-weight: lighter;   
+    font-family: 'Margarine', cursive;     
    }
+   .xspark h4:hover{
+    color: #191970;
+     box-shadow:  0 0 5px #c92e89,
+     0 0 10px  #c92e89; 
+   }
+
  .xspark h2{
-  margin: 0px 50px;
+  margin: 10px 50px;
   font-size: 20px;
   padding: 20px 50px;
   border-radius: 10px;
@@ -244,6 +261,12 @@ nav ul ul li a{
     padding: 5px 15px;
     margin-left: 0px;
     border: 2px solid  cyan;
+    font-weight: 600;
+    box-shadow: 0px 5px 15px #100e17;
+  }
+  #myBtn:hover{
+    background-color: #100e17;
+    color: cyan;
   }
   #dots{
     font-size: 20px;
@@ -254,6 +277,8 @@ nav ul ul li a{
       margin: 0px 50px;
       padding: 5px;
       border: none;
+      color: #c92e89;
+      font-size: 15px;
       border-bottom: 2px solid #DCDCDC;
     }
 
@@ -319,15 +344,15 @@ nav ul ul li a{
   .xspark h4{
     margin-left: 20px;
     margin-right: 20px;
-    padding: 5px;
-    font-size: 15px;
+    padding: 20px 20px;
+    font-size: 13px;
   }
   #tech{
     margin: 0;
     text-align: center;
     margin: 10px 20px;
     padding: 5px;
-    border: 1px solid #100e17;
+    border: 1px solid  #100e17;
     font-size: 13px;
   }
   .motto{
@@ -341,6 +366,10 @@ nav ul ul li a{
     color: #fff;
     padding: 5px 15px;
     border: 2px solid  cyan;
+  }
+  #myBtn:hover{
+    background-color: #100e17;
+    color: cyan;
   }
   #dots{
   font-size: 20px;
@@ -399,9 +428,9 @@ nav ul ul li a{
       .end h3{
         padding-top: 5px;
         padding-bottom: 5px;
-        color: silver;
+        color: #fff;
         font-family: Greatvibes;
-        border-bottom: 1px solid  silver;
+        border-bottom: 1px solid  #fff;
         
       }
       .end ul li a:hover{

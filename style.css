@@ -7,12 +7,14 @@
   font-family: 'Poppins', sans-serif;
 }
 body{
-  background:  #f4f4f4;
+  background:  #fff;
   background-image: url(200.png);
 }
 nav{
   background: #100e17; 
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 nav:after{
   content: '';
@@ -41,14 +43,14 @@ nav ul li{
   margin: 0 5px;
 }
 nav ul li a{
-  color: white;
+  color: cyan;
   line-height: 70px;
   text-decoration: none;
   font-size: 18px;
   padding: 8px 15px;
 }
 nav ul li a:hover, .active a, #btn-1{
-  color: cyan;
+  color: #156ee2;
   border-radius: 5px;
   box-shadow:  0 0 5px #c92e89,
                0 0 10px #c92e89;          
@@ -68,6 +70,7 @@ nav ul li:hover > ul{
   top: 70px;
   opacity: 1;
   visibility: visible;
+  z-index: 99;
 }
 nav ul ul li{
   position: relative;
@@ -80,7 +83,7 @@ nav ul ul li{
 }
 nav ul ul li a{
   line-height: 50px;
-  padding: 5px 10px
+  padding: 5px 10px;
   padding-left: 20px;
 }
 
@@ -179,6 +182,143 @@ nav ul ul li a{
   }
 }
 
+/* Rolling Slide Start */
+
+.wrapperss{
+  width: 100%
+}
+.carousel{
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.carousel .card{
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0;
+  padding: 20px;
+  margin-top: 10px;
+  height: 200px;
+  line-height: 40px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px #fff;
+}
+.carousel .card-1{
+  background:  #100e17;
+  color:  cyan;
+  font-size: 15px;
+  font-weight: 400;
+}
+.carousel .card-2{
+  position: absolute;
+  padding: 0;
+  background: #0072bc;
+}
+.carousel .card-2 img{
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  position: relative;
+}
+.carousel .card-3{
+  position: absolute;
+  padding: 0;
+  background: #39b54a;
+}
+
+.carousel .card-3 img{
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  position: relative;
+}
+.carousel .card-4{
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+  background: #f26522;
+  border-radius: 10px;
+}
+.carousel .card-4 img{
+  padding: 0;
+  padding: 0;
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  position: relative;
+}
+.carousel .card-5{
+  background: #630460;
+  position: absolute;
+  padding: 0;
+}
+.carousel .card-5 img{
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  position: relative;
+}
+.owl-dots{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+.owl-dot{
+  height: 15px;
+  width: 25px;
+  margin: 0 5px;
+  outline: none;
+  border-radius: 14px;
+  border: 2px solid #100e17!important;
+  transition: all 0.3s ease;
+}
+.owl-dot.active,
+.owl-dot:hover{
+  background: #100e17!important;
+  box-shadow: 0 0 5px #c92e89,
+              0 0 10px #c92e89;
+}
+.wrapper .card-1 .imgbox1 img{
+  position: relative;
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+@media (max-width: 680px){
+  .owl-dots{
+    margin-top: 20px;
+}
+.carousel{
+  margin-top: 10px;
+}
+.carousel .card-1{
+  padding: 0;
+}
+.carousel .card-1 p{
+  padding-top: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 14px;
+}
+.owl-dot{
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  margin-bottom: 0;
+}
+.owl-dots{
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+}
+/* Rolling Slide Start */
 
 /*This is new code pasted here from earlier slide*/ 
 
@@ -238,7 +378,7 @@ margin-top: 10px;
 
 .link h2:last-child{
 
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 @media (max-width: 680px){
@@ -387,6 +527,7 @@ h1{
  font-size: 15px;
  text-align: justify;
  font-weight: 500;
+ border-radius: 10px;
 }
 .Award h2{
 
@@ -414,14 +555,10 @@ background: yellow;
 padding: 0px 10px;
 border-radius: 5px;
  }
-
- #awardspace{
-
+ .Award h4{
   margin-bottom: 30px;
   padding-bottom: 30px;
- }
- .Award h4{
-  display: none;
+  color: #f4f4f4;
 }
 
 
@@ -429,7 +566,7 @@ border-radius: 5px;
  @media (max-width: 680px){
 
   .Award{
-
+    text-align: left;
     margin: 0;
     padding: 0;
     box-shadow: 0px 5px 15px #071425;
@@ -447,7 +584,6 @@ border-radius: 5px;
     padding-bottom: 0px;
     padding-bottom: 5px;
     text-decoration: none;
-
    }
    .Award p{
 
@@ -456,11 +592,13 @@ border-radius: 5px;
     font-size: 12px;
     text-align: justify;
     border: none;
-    background-color: #071425;
+    background-color:  black;
     opacity: 0.9;
-    color:  white;
+    color: #ddd;
+    font-weight: lighter;
     padding: 5px;
     font-style: italic;
+    border-radius: 0;
 }
 .Award a{
   font-size: 10px;
@@ -593,7 +731,7 @@ border-bottom: 1px dotted #535353;
         width: 100%;
         position: relative;
         line-height: 36px;
-        margin-top: 50px;
+        margin-top: 100px;
         border: none;
         box-shadow: 0px 5px 15px #071425;
       }
@@ -621,11 +759,11 @@ border-bottom: 1px dotted #535353;
         display: block;
         border-radius: 50%;
         font-size: 18px;
-        height: 35px;
-        width: 35px;
+        height: 36px;
+        width: 36px;
         background: black;
-        border-bottom: 1px solid #c92e89;
-        border-top: 1px solid #c92e89;
+        border-bottom: 2px solid #c92e89;
+        border-top: 2px solid #c92e89;
       }
 
       .end h3{
@@ -671,7 +809,7 @@ border-bottom: 1px dotted #535353;
     }
     .end{
 
-      margin-top: 50px;
+      margin-top: 80px;
     }
     .end ul li a:hover{
       background-color: white;
@@ -701,17 +839,18 @@ border-bottom: 1px dotted #535353;
 .resume a{
   margin: 0;
   text-align: center;
-  margin-left: 50px;
   padding: 20px 40px;
   font-size: 20px;
   font-weight: 700;
   text-decoration: none;
-  background-color: #f7f7f7;
-  color:  #156ee2;
+  background-color:  #100e17;
+  border: 1px solid #fff;
+  color:  #fff;
   box-shadow:   0 0 5px #c92e89,
                 0 0 10px #c92e89; 
-  border-radius: 5px;
+  border-radius: 10px;
   box-sizing: border-box;
+  opacity: 0.9;
 }
 .resume a:hover{
   color: #156ee2;
@@ -740,7 +879,7 @@ border-bottom: 1px dotted #535353;
   font-size: 17px;
   font-weight: 600;
   padding: 10px 15px;
-  color: #156ee2;
+  color: #fff;
   box-shadow:  0 0 5px #156ee2,
                0 0 10px #156ee2; 
 }
@@ -748,8 +887,8 @@ border-bottom: 1px dotted #535353;
   border-radius: 5px;
   background-color: #f7f7f7;
   padding: 10px 15px;
-  box-shadow:  0 0 5px red,
-               0 0 10px  red; 
+  box-shadow:  0 0 5px #c92e89,
+               0 0 10px #c92e89; 
 }
 }
 
@@ -909,3 +1048,50 @@ overflow: hidden;
   transform: scaleY(1);
 }
 }
+
+/* back to top start  */
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 200px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none;
+  outline: none;
+  background-color: red; 
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  box-shadow:  0 0 5px  #156ee2,
+               0 0 10px  #156ee2;
+}
+#myBtn p{
+  display: none;
+}
+
+#myBtn:hover, #myBtn p:hover{
+  background-color:  #100e17;
+  display: contents;
+  display: all;
+}
+
+@media (max-width: 680px){
+  #myBtn{
+  right: 5px;
+  bottom: 5px;
+  padding: 5px 15px;
+  font-size: 12px;
+  font-weight: lighter;
+}
+#myBtn p{
+  display: none;
+}
+#myBtn:hover{
+  display: contents;
+}
+}
+/* back to top end  */
