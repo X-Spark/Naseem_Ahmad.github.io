@@ -237,7 +237,7 @@ nav ul ul li a{
   font-weight: 400; 
 }
 .carousel .card-2{
-  position: absolute;
+  position: relative;
   padding: 0;
   background: #0072bc;
 }
@@ -248,7 +248,7 @@ nav ul ul li a{
   position: relative;
 }
 .carousel .card-3{
-  position: absolute;
+  position: relative;
   padding: 0;
   background: #39b54a;
 }
@@ -260,7 +260,7 @@ nav ul ul li a{
   position: relative;
 }
 .carousel .card-4{
-  position: absolute;
+  position: relative;
   padding: 0;
   margin: 0;
   margin-top: 10px;
@@ -277,7 +277,7 @@ nav ul ul li a{
 }
 .carousel .card-5{
   background: #630460;
-  position: absolute;
+  position: relative;
   padding: 0;
 }
 .carousel .card-5 img{
