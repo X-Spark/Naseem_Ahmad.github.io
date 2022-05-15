@@ -622,7 +622,7 @@ border-radius: 5px;
     padding-right: 8px;
     text-align: justify;
     border-radius: 5px;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);   
+    /*box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);*/
 }
 .Award a{
   font-size: 10px;
