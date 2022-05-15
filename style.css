@@ -528,7 +528,10 @@ h1{
     color: #535353;
     border-bottom: 1px dotted #535353;
  }
- 
+ }
+
+
+
  .Award{
   margin: 0;
   padding: 0;
@@ -591,8 +594,7 @@ border-radius: 5px;
     text-align: left;
     margin: 0;
     padding: 0;
-    background-color: #fff;
-    color: #121212;
+    box-shadow: 0px 5px 15px #071425;
   }
   .Award h1{
 
@@ -600,29 +602,28 @@ border-radius: 5px;
     border-bottom: 1px solid #535353;
    }
    .Award h2{
-    margin-left: 14px;
+
+    margin-left: 10px;
     margin-right: 10px;
     font-size: 13px;
     padding-bottom: 0px;
     padding-bottom: 5px;
     text-decoration: none;
-    border-bottom: 1px solid #202020;
    }
    .Award p{
+
     margin-left: 10px;
     margin-right: 10px;
-    height: auto;
     font-size: 12px;
+    border: none;
+    background-color:  black;
     opacity: 0.9;
-    color: black;
-    border: 1px solid #fff;
-    background-color: #f4f4f4;
-    border-top: 2px solid #ddd;
-    padding: 10px;
+    color: #ddd;
+    padding: 5px;
     padding-right: 8px;
+    font-style: italic;
     text-align: justify;
-    border-radius: 5px;
-    /*box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);*/
+    border-radius: 3px;
 }
 .Award a{
   font-size: 10px;
