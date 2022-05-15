@@ -606,6 +606,7 @@ border-radius: 5px;
     padding-bottom: 0px;
     padding-bottom: 5px;
     text-decoration: none;
+    border-bottom: 1px solid #202020;
    }
    .Award p{
     margin-left: 10px;
@@ -616,6 +617,7 @@ border-radius: 5px;
     color: black;
     border: 1px solid #fff;
     background-color: #f4f4f4;
+    border-top: 2px solid #ddd;
     padding: 10px;
     padding-right: 8px;
     text-align: justify;
