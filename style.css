@@ -589,54 +589,61 @@ border-radius: 5px;
 
  @media (max-width: 680px){
 
-  .Award{
-    text-align: left;
-    margin: 0px 10px;
-    padding: 0;
-    box-shadow: 0px 5px 15px #071425;
+  .first-award{
   }
-  .Award h1{
+  .second-award{
+    margin-top: 10px;
+  }
+  .Third-award{
+   margin-top: 10px;
+  }
 
-    margin-left: 10px;
-    border-bottom: 1px solid #535353;
-   }
-   .Award h2{
+ .fourth-award{
+  margin-top: 10px;
+  }
 
-    margin-left: 10px;
-    margin-right: 10px;
+.fifth-award{
+margin-top: 10px;
+}
+
+#award{
+  margin: 10px 8px;
+  padding: 0;
+  box-shadow: 0px 5px 15px #071425;
+  border-radius: 5px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+#award p{
+text-align: left;
+margin: 10px;
+color: #535353;
+padding: 0px 5px;
+font-size: 13px;
+}
+#award h1{
+  margin: 0px;
+  padding: 10px 0px 0px 5px;
+  text-align: center;
+  border-bottom: 2px solid #39b54a;
+  color: #156ee2;
+  }
+   #award h2{
+    margin: 0px 5px;
+    padding: 10px 2px 0px 2px;
     font-size: 13px;
-    padding-bottom: 0px;
-    padding-bottom: 5px;
     text-decoration: none;
    }
-   .Award p{
-
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 12px;
-    border: none;
-    background-color:  black;
-    opacity: 0.9;
-    color: #ddd;
-    padding: 5px;
-    padding-right: 8px;
-    font-style: italic;
-    text-align: justify;
-    border-radius: 3px;
-}
-.Award a{
-  font-size: 10px;
-}
-.Award  #awardspace{
-
-padding-bottom: 5px;
- }
- .Award h4{
-   background-color: #fff;
-   color: #fff;
-   font-size: 1px;
-   display: contents;
- }
+   #award a{
+     font-size: 12px;
+   }
+   #award h6{
+     height: 15px;
+     font-size: 5px;
+     background-color: #156ee2;
+     border-bottom-right-radius: 10px;
+     border-bottom-left-radius: 10px;
+   }
 }
 
 .patent{
