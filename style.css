@@ -8,6 +8,8 @@
 }
 body{
   background:  #fff;
+  background-image: url(200.png);
+  background-size: cover;
 }
   .fixed{
     position: fixed;
@@ -511,7 +513,6 @@ text-align: center;
   font-size: 0.9em;
   min-width: 400px;
   background-color: #fff;
-  opacity: 0.9;
   border-radius: 10px;
 }
 
@@ -520,7 +521,6 @@ text-align: center;
   box-shadow: 0 5px 15px 0 rgba(0,0,0,0.2);
   padding-bottom: 40px;
   background-color: #fff;
-  opacity: 0.9;
   width: 75%;
   border-radius: 10px;
   text-align: center;
@@ -571,6 +571,7 @@ h1{
   }
   .experience{
     min-width: 100%;
+    background-color: #fff;
     margin: 0;
     padding: 0; 
     margin-top: 10px;
@@ -591,6 +592,7 @@ h1{
 
   .experience thead tr{
     font-size: 14px;
+    background-color: #fff;
     margin: 0;
     padding: 0;
     margin-top: 0;
@@ -599,6 +601,7 @@ h1{
   }
   
   .experience tbody td{
+    background-color: #fff;
     padding: 5px;
     font-size: 12px;
     font-weight: 300;
@@ -613,7 +616,6 @@ h1{
   padding: 0;
   box-shadow: 0 5px 15px 0 rgba(0,0,0,0.2);
   background-color: #fff;
-  opacity: 0.9;
   width: 75%;
   text-align: center;
   border-radius: 10px;
@@ -741,7 +743,6 @@ font-size: 13px;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 5px 15px 0 rgba(0,0,0,0.2);
   width: 75%;
-  opacity: 0.9;
   border-radius: 10px;
 }
 
@@ -802,6 +803,7 @@ border-bottom: 1px dotted #535353;
           margin: 10px;
           border-radius: 10px;
           width: auto;
+          background-color: #fff;
         }
         .patent h1{
           margin: 0;
@@ -857,7 +859,8 @@ border-bottom: 1px dotted #535353;
 
       .end{
         box-sizing: border-box;
-        background-color: #100e17;
+        background-color: black;
+        opacity: 100;
         color:  #fff;
         text-align: center;
         width: auto;
@@ -889,34 +892,29 @@ border-bottom: 1px dotted #535353;
       }
       .end ul li a{
         margin: 0;
-        margin: 10px;
+        margin: 5px;
         padding: 0;
-        color:  #fff;
+        color:  black;
         text-align: center;
         display: block;
         border-radius: 50%;
         font-size: 18px;
         height: 36px;
         width: 36px;
-        background: black;
-        border-bottom: 2px solid #c92e89;
-        border-top: 2px solid #c92e89;
+        background:  white;
       }
 
       .end h3{
         margin: 0;
         padding: 0;
         padding-top: 10px;
-        font-size: 25px;
-        font-weight: 500;
-        color:  #fff;
-        border-radius: 10px;
-        border-bottom: 2px solid  #fff;
+        font-size: 23px;
+        color:  #ffff;
         background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
       }
       .end ul li a:hover{
-        background-color: white;
-        color: black;
+        background-color:  #333;
+        color: #0072bc;
       }
       
 
@@ -955,14 +953,12 @@ border-bottom: 1px dotted #535353;
     }
 
     #end{
-      margin: 3px;
+      margin: 0px;
       padding: 0;
       margin-bottom: 0;
       margin-top: 80px;
-      border-radius: 10px;
       background-color: #100e17;
       border: 1px solid #fff;
-      border-bottom: none;
       padding-bottom: 20px;
     }
     .end ul li a{
@@ -984,7 +980,6 @@ border-bottom: 1px dotted #535353;
   box-shadow: 0 5px 15px 0 rgba(0,0,0,0.2);
   height: 200px;
   background: #fff;
-  opacity: 0.9;
   width: 75%;
   border-radius: 10px;
    }
