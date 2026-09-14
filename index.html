@@ -1,497 +1,755 @@
 <!DOCTYPE html>
-<!--Dsigned and developed by Naseem Ahmad-->
-<!-- MAIN Menue start -->
+<!--Designed and developed by Naseem Ahmad-->
 <html lang="en" dir="ltr">
 
-  <head>
+<head>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <meta charset="utf-8"> <!--This URL is to insert emoji -->
-    <title>Naseem Ahmad</title>
-    <link rel="stylesheet" href="style.css"> <!-- ye CSS FILE ka src haii-->
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>  <!-- jq  ka src haii-->
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- ye google font ka src haii-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--This is for intial frame to make it responsive-->
+    <meta charset="utf-8">
+    <title>Naseem Ahmad - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  </head>
-  <body>
-   <!-- MAIN Menue end -->
-   
-   
-   <!-- NAV Menue Start -->
-   <div class="fixed">
-    <nav>
-      <div class="logo">
-<img src="image/MY IMAGE.jpg" > </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<div class="logo1">Naseem Ahmad</div>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
 
-<div class="nav-all">
-<label for="btn" class="icon">
-        <span class="fa fa-bars"></span>
-      </label>
-      <input type="checkbox" id="btn">
-      <ul>
-<li class="active"><a href="#">Home</a></li>
-<li>
-          <label for="btn-1" class="show">My Projects <i class="fas fa-caret-down"></i></label>
-          <a href="#">My Projects +</a>
-          <input type="checkbox" id="btn-1">
-          <ul>
-<li><a href="x-spark.html">X-Spark</a></li>
-<li><a href="https://medium.com/@HR03/smart-notice-board-using-x-spark-mat-1c508a5e84f3" target="_blank">Smart Notice Board</a></li>
-<li><a href="jaago.html" target="_blank">JAAGO</a></li>
-<li><a href="Smart.html" target="_blank">Home Security system</a></li>
-</ul>
-</li>
+        /* Navbar Styling */
+        .fixed {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
 
-<li><a href="#award">Awards & Achievements 🥇</a></li>
-<li><a href="#patent">Patent & Research</a></li>
-<li><a href="#experience">My Experiences</a></li>
-<!--<li><a href="#link">My Social Media Coordinates</a></li>-->
-</ul> </div>
-</nav>
-</div>
-<!-- NAV Menue End -->
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            width: 100%;
+        }
 
-  <!--Rolling Head-->
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .logo img {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            margin-right: 1rem;
+            object-fit: cover;
+        }
+
+        .logo1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .nav-all ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-all ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-all ul li a:hover {
+            color: #ffd700;
+        }
+
+        .nav-all ul li.active a {
+            color: #ffd700;
+            border-bottom: 2px solid #ffd700;
+        }
+
+        /* Hero Section */
+        body {
+            padding-top: 80px;
+        }
+
+        .wrapperss {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 3rem 2rem;
+            color: #fff;
+            text-align: center;
+        }
+
+        .carousel {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .card p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Body Content */
+        .body-content {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .Award, .patent, .experiencehead, .resume, .gallery {
+            background: #fff;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #667eea;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 1rem;
+        }
+
+        h2 {
+            color: #764ba2;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            color: #667eea;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h4 {
+            color: #333;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        a {
+            color: #c92e89;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Awards Section */
+        .first-award, .second-award, .Third-award, .fourth-award, .fifth-award {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 5px solid #667eea;
+            border-radius: 5px;
+        }
+
+        /* Experience Table */
+        .experience {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .experience thead {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+        }
+
+        .experience th, .experience td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .experience tbody tr:hover {
+            background: #f0f0f0;
+        }
+
+        /* Gallery */
+        .gallery {
+            background: #fff;
+            padding: 2.5rem;
+        }
+
+        .box {
+            display: inline-block;
+            width: calc(25% - 1rem);
+            margin: 0.5rem;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .imgbox {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .imgbox image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .details {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            padding: 1rem;
+        }
+
+        .details h2 {
+            color: #fff;
+            margin: 0;
+        }
+
+        .details p {
+            color: #fff;
+            margin: 0.5rem 0 0 0;
+        }
+
+        /* Back to Top Button */
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #667eea;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            transition: background-color 0.3s;
+        }
+
+        #myBtn:hover {
+            background-color: #764ba2;
+        }
+
+        /* Footer */
+        .end {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .end ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .end ul li a {
+            color: #fff;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        .end ul li a:hover {
+            color: #ffd700;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            .nav-all ul {
+                flex-direction: column;
+                gap: 1rem;
+                margin-top: 1rem;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .box {
+                width: calc(50% - 1rem);
+            }
+
+            .experience th, .experience td {
+                padding: 0.5rem;
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .box {
+                width: 100%;
+            }
+
+            .end ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Start -->
+    <div class="fixed">
+        <nav>
+            <div style="display: flex; align-items: center;">
+                <div class="logo1">Naseem Ahmad</div>
+            </div>
+
+            <div class="nav-all">
+                <ul>
+                    <li class="active"><a href="#award">Awards</a></li>
+                    <li><a href="#patent">Research</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#end">Connect</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- Navigation End -->
+
+    <!-- Hero Section -->
     <div class="wrapperss">
-      <div class="carousel owl-carousel">
-        <div class="card card-1">
-          <p style="font-weight: 600">
-            Hey, this is <text style="color: #c92e89;"> "Naseem Ahmad", </text> Formerly known as <text style="color: #c92e89;">"Naseem". </text>
-              This is my personal website where you will get insights about me &amp; my work. Here you can also collaborate!...</p>
-</div>
-<div class="card card-2">
-  <img src="image/iitf1.jpg"></div>
-<div class="card card-3">
-  <img src="image/hultkuala.jpg"></div>
-<div class="card card-4">
-  <img src="image/Hult2020.jpg"></div>
-<div class="card card-5">
-  <img src="image/hultindia.jpg"></div>
-</div>
-</div>
-
- <!--Rolling Head End-->
-
-
-
-<div class="body-content">
-  <!--body content div-->
-
-  
-
-<div class="Award" id="award"> 
-<h1>Awards & Achievements 🥇</h1>  
-
-<div class="first-award">
-
-      <h2>1. Winner at The Hult Prize OnCampus Challenge 2018 🥇</h2>
-       <p> National Finalist and Regional Finalist (Presented at Kuala Lumpur, Malaysia & Delhi)</p>
-        <p><text style="color: #c92e89; font-weight: bold;">Topic :</text> "Harnessing the power of energy to transform the lives of 1 million people" </p>
-      <p><text style="color: #c92e89; font-weight: bold;">Link :</text> <a href="https://www.nsec.ac.in/images/edc/Hult_regional.pdf"  target="_blank" >Click here for regional details </a><br>
-         <text style= "color: #c92e89; font-weight: bold;">Link :</text> <a href="https://www.nsec.ac.in/images/edc/Hult_National.pdf" target="_blank">Click here for national details </a></p>
-</div>  
-<div class="second-award">
-       <h2>2. Semi-finalist at  Texas Instruments Indian Innovation Challenge Design (IICDC) 🥇</h2>        
-<p>   
-    Hosted by Texas Instruments; &NonBreakingSpace; Supported by MyGov & IISC Bangalore
-    26511 students from 10146 teams from all the over India participated in this edition.
-    Out of which, only 346 teams got shortlisted for the quarterfinal round of IICDC 2018.
-    Among them, 2 projects got shortlisted, namely:</p>
-    <p><text style="color: #c92e89; olor: #c92e89; font-weight: bold;"> X-Spark - </text>[Generates electricity from human/ vehicle weight (pressure)]<br>
-    <text style="color: #c92e89; color: #c92e89; font-weight: bold;"> Link - </text><a href="https://www.nsec.ac.in/images/edc/IICDC2018.pdf" target="_blank"> Click here for the details</a>
- </p>
-</div>
-
-<div class="Third-award">
-    <h2>3. Winner at BNCCI  in 31st IITF-2018 (Bengal National Chamber of Commerce and Industry) 🥇</h2> 
-    <p>   
-      Hosted by IITF, Kolkata (Industrial India Trade Fair, Kolkata); &NonBreakingSpace; Supported by Bengal Gov. </p>
-     <p><text style="color: #c92e89; font-weight: bold;">Link :</text><a href="https://www.nsec.ac.in/images/edc/IITF2018_merged.pdf" target="_blank"> Click here for the details</a><br>
-      <text style="color: #c92e89; font-weight: bold;">News paper :</text><a href="https://drive.google.com/file/d/1nMQnKVvPP20ItCqEaAfGDvsZZfgrB7KK/view?usp=sharing" target="_blank"> Click here for the details</a></p>
-</div>
-
-<div class="fourth-award">
-      <h2>4. Got recognition at PRISM (Promoting Innovations in Individuals Start-ups and MSME) 🥇</h2>
-      <p>   
-        Hosted by Techno India Group; &NonBreakingSpace; Supported by MyGov, MSME & West Bengal Gov. &nbsp;A #startupinda Initiatives</p>
-       <p><text style="color: #c92e89; font-weight: bold;">Link :</text><a href="https://drive.google.com/file/d/1nbm_FletEPn5FtLD7dvRHqAZA5TqyRS6/view?usp=sharing" target="_blank"> Click here for the details</a></p>
-</div>
-
-<div class="fifth-award">
-        <h2>5. Got recognition at The Times Innovation Challenge 🥇</h2>
-        <p id="awardspace">   
-          Hosted by The Times of India;  &NonBreakingSpace; Supported by  West Bengal Gov.</p><h6></h6>
-</div>
-</div>
-</div>
-<!--patent & research -->
-
-<div class="patent" id="patent">
-
-<h1> Patent & Research 🧑‍💻</h1>
-
-<h2> Research Work </h2>
-
-<h4>X-Spark: Generating Electricity from Human or Vehicle Pressure using PEC Material</h4>
-<p>@IEEE Bombay section December 1, 2018 at I2CT 5th International Conference</p>
-<h3> Technology used:</h3>
-<p>Embedded System || Microcontroller || Inverter Circuit || Battery Management System</p>
-<p> <b>Link:</b> <a href="https://ieeexplore.ieee.org/document/9033755" target=_blank> Click here for more
-    information</a></p>
-
-
-<h4> JAAGO: Drowsiness Detection System</h4>
-<p>@Texas Instruments Indian Innovation Challenge Design Challenge (IICDC)</p>
-
-<h3> Technology used:</h3>
-<p>MATLAB || MATLAB GUIs || Image Processing || Pervasive Computing</p>
-<p> <b>Link:</b> <a href="https://drive.google.com/file/d/1qtdojoEPiO6xec3BXZujyTu5PbWYioMl/view?usp=sharing"
-    target="_blank">Click here for more information</a></p>
-
-
-<h2> Patent</h2>
-
-<h4> X-Spark: Generating Electricity from Human or Vehicle Pressure using PEC Material </h4>
-<p> Date of Filing: 19th June 2019 || Publication Date: 09th August 2019
-  || Application Number: 201931024351 || Organisation: Indian IPR Govt of India
-</p>
-<p id="experience"> <b>Link:</b> <a href="https://ipindiaservices.gov.in/publicsearch" target=_blank> Click here for more
-    information</a></p>
-</div>
-
-<!-- Experience & Achievement-->
-
-<div class="experiencehead">
-
-<table class="experience"> 
-
-
-<thead>
-  <h1> My Experiences</h1>
-  <tr>
-    <th> Organisation </th>
-    <th> Designation/Role </th>
-    <th style="padding-left: 10px;">Session</th>
-  </tr>
-</thead>
-
-<tbody>
-  <tr>
-    <td>X-Spark</text> </td>
-    <td>Founder & CEO </td>
-    <td>November 2017 to 2019</td>
-  </tr>
-
-  <tr>
-    <td>Hult Prize Foundation</text></td>
-    <td>Campus Director</td>
-    <td>2019 to 2020</td>
-  </tr>
-
-  <tr>
-    <td> NSEC E-Cell </td>
-    <td> Campus Head </td>
-    <td>2019 to 2020</td>
-  </tr>
-
-  <tr>
-    <td id="link"> IIC-NSEC (MHRD-AICTE) </td>
-    <td> Innovative Activity Coordinator </td>
-    <td>2019 to 2020</td>
-  </tr>
-
-  <tr>
-    <td id="link"> <text style="color: blue;">Learning</text><text style="color: green;">Mate</text></td>
-    <td> Consultant & developer </td>
-    <td> Sep 2020 to present </td>
-  </tr>
-
-</tbody>
-
-
-</table>
-</div>
-
-<!-- Creat blank between experience-->
-
-</div>
-<!-- Creat blank between experience-->
-
-<!--
-<div class="link">
-<h1>My Social Media Coordinates</h1>
-<h3> Social Media Links </h3>
-<h2 class="fa fa-linkedin"> <a href="https://www.LinkedIn.com/in/naseem-ahmad-025246b3/" target="blank"></a></h2>
-<h2 class="fa fa-github"> <a href="https://github.com/X-Spark" target="blank"></a> </h2>
-<h2 class="fa fa-twitter"> <a href="https://twitter.com/_X_Spark_" target="blank"></a></h2>
-<h2 class="fa fa-envelope"> <a href="mailto:ahmadnaseem789@gmail.com" target="blank"></a></h2>
-<h2 class="fa fa-facebook"> <a href="https://www.facebook.com/ahmadnaseem789/" target="blank"></a> </h2>
-<h2 class="fa fa-medium"> <a href="https://medium.com/@HR03" target="blank"></a> </h2>
-</div>
--->
-
-<!-- Resume Embed -->
-<div class="resume">
-  <h1>My Resume 📝</h1>
-   <h2> <a href="NaseemAhmad_Resume.pdf"> Download My Resume 📝</a> </h2>
-
-</div>
-<!-- Resume Embed --></div>
-
-
-
-<div class="gallery">
-  <h1>  Achievement Wall - Gallery </h1>
-
-  <div class="box">
-    <div class="imgbox">
-      <image src="image/oncampus.jpg">
-    </div>
-    <div class="details">
-      <div class="content">
-        <h2>GALLERY</h2>
-        <p>11 November 2017, won Hult Prize Oncampus</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="box">
-  <div class="imgbox">
-    <image src="image/Regional.jpg">
-  </div>
-  <div class="details">
-    <div class="content">
-      <h2>Gallery</h2>
-      <p>Date: 16 March 2018, Represented NSEC in Hult Prize Regional final at kuala Lumpur Malaysia</p>
-    </div>
-  </div>
-</div>
-
-
-<div class="box">
-<div class="imgbox">
-  <image src="image/regional2.jpg">
-</div>
-<div class="details">
-  <div class="content">
-    <h2>Gallery</h2>
-    <p>Date: 16/17th March 2018, Networkig & presentation at Cyberjaya Malaysia</p>
-  </div>
-</div>
-</div>
-
-
-<div class="box">
-<div class="imgbox">
-  <image src="image/national.jpg">
-</div>
-<div class="details">
-  <div class="content">
-    <h2>Gallery</h2>
-    <p>Date: 16/17th April 2018, Represented NSEC at India national at Delhi</p>
-  </div>
-</div>
-</div>
-
-
-<div class="box">
-<div class="imgbox">
-  <image src="image/netaji.jpg">
-</div>
-<div class="details">
-  <div class="content">
-    <h2>Gallery</h2>
-    <p>Date: 23rd January 2018, felicitated by NSEC for entrepreneurial achievements on the occasion of Netaji jayanti.</p>
-  </div>
-</div>
-</div>
-
-
-<div class="box">
-<div class="imgbox">
-  <image src="image/texas.jpg">
-</div>
-<div class="details" id="details2">
-  <div class="content" id="content2">
-    <h2>Gallery</h2>
-    <p>Date: 31 March 2018, Got selected for  Texas Instruments Innovation Challenge 2018,
-      we were in top 200 team among 10146 team across the country.</p>
-  </div>
-</div>
-</div>
-
-
-
-<div class="box">
-  <div class="imgbox">
-    <image src="image/iitf.jpg">
-  </div>
-  <div class="details" id="details2">
-    <div class="content" id="content2">
-      <h2>Gallery</h2>
-      <p>Date: 26 December 2018,  won 1st prize at 31st India industrial trade fair (BNCCI) KOLKATA</p>
-    </div>
-  </div>
-  </div>
-
-
-  <div class="box">
-    <div class="imgbox">
-      <image src="image/iitfpaper.jpg">
-    </div>
-    <div class="details" id="details2">
-      <div class="content" id="content2">
-        <h2>Gallery</h2>
-        <p>Date: 2nd January 2019,  Media coverage about winner of 31st IITF @AAjkal & @The Times Of India</p>
-      </div>
-    </div>
-    </div>
-
-
-
-    <div class="box">
-      <div class="imgbox">
-        <image src="image/ecell.jpg">
-      </div>
-      <div class="details" id="details2">
-        <div class="content" id="content2">
-          <h2>Gallery</h2>
-          <p>Date: 8th Feb 2019, started leading NSEC e cell as a Campus Head</p>
-        </div>
-      </div>
-      </div>
-
-
-
-      <div class="box">
-        <div class="imgbox">
-          <image src="image/noticeboard.jpg">
-        </div>
-        <div class="details" id="details2">
-          <div class="content" id="content2">
-            <h2>Gallery</h2>
-            <p>Date: 15th April 2019, this was 3rd project, 
-              a smart notice board, we made on a urgent request within 1 month for NAAC visit.</p>
-          </div>
-        </div>
-        </div>
-
-
-        <div class="box">
-          <div class="imgbox">
-            <image src="image/ieee.jpg">
-          </div>
-          <div class="details" id="details2">
-            <div class="content" id="content2">
-              <h2>Gallery
-              <p>Date: 31st March 2019, Published my first research paper at one of reputed journal i2ct IEEE pune section.</p></h2>
+        <div class="carousel owl-carousel">
+            <div class="card card-1">
+                <p style="font-weight: 600; font-size: 1.3rem;">
+                    Hey, this is <text style="color: #ffd700;"><b>"Naseem Ahmad"</b></text>, formerly known as <text style="color: #ffd700;"><b>"Naseem"</b></text>. 
+                    This is my personal website where you'll discover insights about me and my work. Feel free to collaborate!
+                </p>
             </div>
-          </div>
-          </div>
-
-
-          
-        <div class="box">
-          <div class="imgbox">
-            <image src="image/hult.jpg">
-          </div>
-          <div class="details" id="details2">
-            <div class="content" id="content2">
-              <h2>Gallery</h2>
-              <p>Date: 25th January 2020, Hosted last event at Campus as a Campus Head Of Hult Prize Foundation as well as E Cell</p>
+            <div class="card card-2">
+                <img src="image/iitf1.jpg" alt="IITF Achievement">
             </div>
-          </div>
-          </div>
+            <div class="card card-3">
+                <img src="image/hultkuala.jpg" alt="Hult Prize Kuala Lumpur">
+            </div>
+            <div class="card card-4">
+                <img src="image/Hult2020.jpg" alt="Hult 2020">
+            </div>
+            <div class="card card-5">
+                <img src="image/hultindia.jpg" alt="Hult India">
+            </div>
+        </div>
+    </div>
 
+    <!-- Main Content -->
+    <div class="body-content">
+        <!-- Awards Section -->
+        <div class="Award" id="award">
+            <h1>🥇 Awards & Achievements</h1>
 
-</div>
+            <div class="first-award">
+                <h2>Winner at The Hult Prize OnCampus Challenge 2018</h2>
+                <p><b>Recognition:</b> National Finalist and Regional Finalist</p>
+                <p><b>Presented at:</b> Kuala Lumpur, Malaysia & Delhi, India</p>
+                <p><b>Challenge Topic:</b> "Harnessing the power of energy to transform the lives of 1 million people"</p>
+                <p>
+                    <a href="https://www.nsec.ac.in/images/edc/Hult_regional.pdf" target="_blank">Regional Details</a> | 
+                    <a href="https://www.nsec.ac.in/images/edc/Hult_National.pdf" target="_blank">National Details</a>
+                </p>
+            </div>
 
+            <div class="second-award">
+                <h2>Semi-finalist at Texas Instruments Innovation Challenge Design (IICDC)</h2>
+                <p><b>Hosted by:</b> Texas Instruments | <b>Supported by:</b> MyGov & IISC Bangalore</p>
+                <p>26,511 students from 10,146 teams across India participated. Only 346 teams were shortlisted for quarterfinals.</p>
+                <p><b>Projects Selected:</b></p>
+                <p>
+                    <b style="color: #c92e89;">X-Spark</b> - Generates electricity from human/vehicle weight (pressure)<br>
+                    <a href="https://www.nsec.ac.in/images/edc/IICDC2018.pdf" target="_blank">View Details</a>
+                </p>
+            </div>
 
-<!--back to top start-->
-<button onclick="topFunction()" id="myBtn" title="Go to top"><p>Back To</p> Top</button>
-<!--back to top end-->
+            <div class="Third-award">
+                <h2>Winner at BNCCI in 31st IITF-2018</h2>
+                <p><b>Event:</b> Bengal National Chamber of Commerce and Industry</p>
+                <p><b>Hosted by:</b> IITF, Kolkata (Industrial India Trade Fair)</p>
+                <p><b>Supported by:</b> Bengal Government</p>
+                <p><a href="https://www.nsec.ac.in/images/edc/IITF2018_merged.pdf" target="_blank">View Award Details</a></p>
+            </div>
 
+            <div class="fourth-award">
+                <h2>Recognition at PRISM Initiative</h2>
+                <p><b>Event:</b> Promoting Innovations in Individuals Start-ups and MSME</p>
+                <p><b>Hosted by:</b> Techno India Group</p>
+                <p><b>Supported by:</b> MyGov, MSME & West Bengal Government</p>
+                <p><a href="https://drive.google.com/file/d/1nbm_FletEPn5FtLD7dvRHqAZA5TqyRS6/view?usp=sharing" target="_blank">View Recognition</a></p>
+            </div>
 
-<!-- Footer and etc-->
-<div class="end" id="end">
-<ul> <h3> Follow me on Social Media</h3>
-<li><a href="https://github.com/X-Spark" target="blank"><i class="fa fa-github"></i></a></li>
-<li><a href="https://www.LinkedIn.com/in/naseem-ahmad-025246b3/" target="blank"><i class="fa fa-linkedin"></i></a></li>
-<li><a href="https://www.facebook.com/ahmadnaseem789/" target="blank"><i class="fa fa-facebook"></i></a></li>
-<li><a href="https://twitter.com/_X_Spark_" target="blank"><i class="fa fa-twitter"></i></a></li>
-<li><a href="https://www.instagram.com/i_am_naseem/" target="blank"><i class="fa fa-instagram"></i></a></li>
-<li><a href="https://medium.com/@HR03" target="blank"><i class="fa fa-medium"></i></a></li>
-</ul> <p>
-&copy;2020: Designed and Developed with 🧡<br>
-<text style="color: cyan; font-size: 15px;">Powered By :</text> &nbsp; <text style="font-size: 15px; color: #c92e89;"><b>  X-Spark</b></text></p>
-</div>
+            <div class="fifth-award">
+                <h2>Recognition at The Times Innovation Challenge</h2>
+                <p><b>Hosted by:</b> The Times of India</p>
+                <p><b>Supported by:</b> West Bengal Government</p>
+            </div>
+        </div>
 
+        <!-- Patent & Research Section -->
+        <div class="patent" id="patent">
+            <h1>🧑‍💻 Patent & Research</h1>
 
+            <h2>Research Work</h2>
 
-<!-- js for toggle switch start-->
-<script>
-      $('.icon').click(function(){
-        $('span').toggleClass("cancel");
-      });
+            <h4>X-Spark: Generating Electricity from Human or Vehicle Pressure using PEC Material</h4>
+            <p><b>Conference:</b> IEEE Bombay Section - I2CT 5th International Conference, December 1, 2018</p>
+            <h3>Technology Stack:</h3>
+            <p>Embedded System | Microcontroller | Inverter Circuit | Battery Management System</p>
+            <p><a href="https://ieeexplore.ieee.org/document/9033755" target="_blank">Read the Research Paper on IEEE Xplore</a></p>
+
+            <h4>JAAGO: Drowsiness Detection System</h4>
+            <p><b>Challenge:</b> Texas Instruments Indian Innovation Challenge Design Challenge (IICDC)</p>
+            <h3>Technology Stack:</h3>
+            <p>MATLAB | MATLAB GUIs | Image Processing | Pervasive Computing</p>
+            <p><a href="https://drive.google.com/file/d/1qtdojoEPiO6xec3BXZujyTu5PbWYioMl/view?usp=sharing" target="_blank">View Project Details</a></p>
+
+            <h2>Patent</h2>
+
+            <h4>X-Spark: Generating Electricity from Human or Vehicle Pressure using PEC Material</h4>
+            <p>
+                <b>Filing Date:</b> 19th June 2019<br>
+                <b>Publication Date:</b> 09th August 2019<br>
+                <b>Application Number:</b> 201931024351<br>
+                <b>Organisation:</b> Indian IPR, Government of India
+            </p>
+            <p><a href="https://ipindiaservices.gov.in/publicsearch" target="_blank">Search Patent on IPR India Portal</a></p>
+        </div>
+
+        <!-- Experience Section -->
+        <div class="experiencehead">
+            <h1 id="experience">My Professional Experience</h1>
+
+            <table class="experience">
+                <thead>
+                    <tr>
+                        <th>Organisation</th>
+                        <th>Designation/Role</th>
+                        <th>Timeline</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td><b>X-Spark</b></td>
+                        <td>Founder & CEO</td>
+                        <td>November 2017 - 2019</td>
+                    </tr>
+
+                    <tr>
+                        <td><b>Hult Prize Foundation</b></td>
+                        <td>Campus Director</td>
+                        <td>2019 - 2020</td>
+                    </tr>
+
+                    <tr>
+                        <td><b>NSEC E-Cell</b></td>
+                        <td>Campus Head</td>
+                        <td>2019 - 2020</td>
+                    </tr>
+
+                    <tr>
+                        <td><b>IIC-NSEC (MHRD-AICTE)</b></td>
+                        <td>Innovative Activity Coordinator</td>
+                        <td>2019 - 2020</td>
+                    </tr>
+
+                    <tr>
+                        <td><b>LearningMate</b></td>
+                        <td>Consultant & Developer</td>
+                        <td>September 2020 - Present</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Resume Section -->
+        <div class="resume">
+            <h1>📝 My Resume</h1>
+            <p>
+                <a href="NaseemAhmad_Resume.pdf" style="font-size: 1.2rem; padding: 0.8rem 1.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff; border-radius: 5px; display: inline-block;">
+                    📥 Download My Resume
+                </a>
+            </p>
+        </div>
+
+        <!-- Gallery Section -->
+        <div class="gallery">
+            <h1>🏆 Achievement Gallery</h1>
+
+            <div class="box">
+                <div class="imgbox">
+                    <image src="image/oncampus.jpg" alt="Hult Prize OnCampus">
+                </div>
+                <div class="details">
+                    <div class="content">
+                        <h2>Hult Prize OnCampus</h2>
+                        <p>11 November 2017 - Won Hult Prize OnCampus Challenge</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgbox">
+                    <image src="image/Regional.jpg" alt="Hult Regional">
+                </div>
+                <div class="details">
+                    <div class="content">
+                        <h2>Regional Finals</h2>
+                        <p>16 March 2018 - Represented NSEC at Kuala Lumpur, Malaysia</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgbox">
+                    <image src="image/regional2.jpg" alt="Networking">
+                </div>
+                <div class="details">
+                    <div class="content">
+                        <h2>Networking</h2>
+                        <p>16-17 March 2018 - Networking & Presentation at Cyberjaya, Malaysia</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgbox">
+                    <image src="image/national.jpg" alt="National Finals">
+                </div>
+                <div class="details">
+                    <div class="content">
+                        <h2>National Finals</h2>
+                        <p>16-17 April 2018 - Represented NSEC at India National Finals, Delhi</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgbox">
+                    <image src="image/netaji.jpg" alt="Netaji Jayanti">
+                </div>
+                <div class="details">
+                    <div class="content">
+                        <h2>Netaji Jayanti</h2>
+                        <p>23 January 2018 - Felicitated for entrepreneurial achievements</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgbox">
+                    <image src="image/texas.jpg" alt="Texas Instruments">
+                </div>
+                <div class="details">
+                    <div class="content">
+                        <h2>Texas Instruments</h2>
+                        <p>31 March 2018 - Selected for IICDC 2018, Top 200 among 10,146 teams</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgbox">
+                    <image src="image/iitf.jpg" alt="IITF 2018">
+                </div>
+                <div class="details">
+                    <div class="content">
+                        <h2>IITF 2018</h2>
+                        <p>26 December 2018 - Won 1st Prize at 31st India Industrial Trade Fair</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgbox">
+                    <image src="image/iitfpaper.jpg" alt="Media Coverage">
+                </div>
+                <div class="details">
+                    <div class="content">
+                        <h2>Media Coverage</h2>
+                        <p>2 January 2019 - Featured in AAjkal & The Times Of India</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgbox">
+                    <image src="image/ecell.jpg" alt="E-Cell">
+                </div>
+                <div class="details">
+                    <div class="content">
+                        <h2>E-Cell Leadership</h2>
+                        <p>8 February 2019 - Started leading NSEC E-Cell as Campus Head</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgbox">
+                    <image src="image/noticeboard.jpg" alt="Smart Notice Board">
+                </div>
+                <div class="details">
+                    <div class="content">
+                        <h2>Smart Notice Board</h2>
+                        <p>15 April 2019 - Developed for NAAC visit in just 1 month</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgbox">
+                    <image src="image/ieee.jpg" alt="IEEE Publication">
+                </div>
+                <div class="details">
+                    <div class="content">
+                        <h2>IEEE Publication</h2>
+                        <p>31 March 2019 - Published research at IEEE I2CT Pune Section</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgbox">
+                    <image src="image/hult.jpg" alt="Final Event">
+                </div>
+                <div class="details">
+                    <div class="content">
+                        <h2>Final Event</h2>
+                        <p>25 January 2020 - Last event as Hult Prize & E-Cell Campus Head</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+
+    <!-- Footer -->
+    <div class="end" id="end">
+        <h3>Follow Me On Social Media</h3>
+        <ul>
+            <li><a href="https://github.com/X-Spark" target="_blank" title="GitHub"><i class="fa fa-github"></i></a></li>
+            <li><a href="https://www.LinkedIn.com/in/naseem-ahmad-025246b3/" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://www.facebook.com/ahmadnaseem789/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/_X_Spark_" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/i_am_naseem/" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://medium.com/@HR03" target="_blank" title="Medium"><i class="fa fa-medium"></i></a></li>
+        </ul>
+        <p>&copy; 2024 - Designed and Developed with 🧡 by <b>Naseem Ahmad</b></p>
+        <p style="font-size: 0.9rem; margin-top: 0.5rem;">Powered by <b style="color: #ffd700;">X-Spark</b></p>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Back to top functionality
+        mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        // Carousel initialization
+        $(".carousel").owlCarousel({
+            margin: 20,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+                600: {
+                    items: 2,
+                    nav: false
+                },
+                1000: {
+                    items: 3,
+                    nav: false
+                }
+            }
+        });
     </script>
-<!-- js for toggle switch end-->    
 
+    <script>
+        document.cookie = 'cross-site-cookie=bar; SameSite=Lax';
+    </script>
+</body>
 
-<script> 
-
-//back to top js start
-mybutton = document.getElementById("myBtn");
-
-  // When the user scrolls down 20px from the top of the document, show the button
-  window.onscroll = function() {scrollFunction()};
-  
-  function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      mybutton.style.display = "block";
-    } else {
-      mybutton.style.display = "none";
-    }
-  }
-  
-  // When the user clicks on the button, scroll to the top of the document
-  function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  }
-  </script>
-
-<!-- This is Rolling Head jq-->
-
-<script>
-  $(".carousel").owlCarousel({
-    margin: 20,
-    loop: true,
-    autoplay: true,
-    autoplayTimeout: 2000,
-    autoplayHoverPause: true,
-    responsive: {
-      0:{
-        items:1,
-        nav: false
-      },
-      600:{
-        items:2,
-        nav: false
-      },
-      1000:{
-        items:3,
-        nav: false
-      }
-    }
-  });
-</script>
-
-<script>document.cookie = 'cross-site-cookie=bar; SameSite=Lax';</script>
-
-
-  </body>
 </html>
